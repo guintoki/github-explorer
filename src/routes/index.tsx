@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
@@ -8,7 +9,7 @@ const Routes: React.FC = () => {
   return (
     <Switch>
       <Route path="/" exact component={Dashboard} />
-      <Route path="/repository" component={Repository} />
+      <Route path="/repositories/:repository+" component={Repository} />
     </Switch>
   );
 };
